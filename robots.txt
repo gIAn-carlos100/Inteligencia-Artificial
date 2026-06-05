@@ -1,6 +1,6 @@
-# robots.txt para https://gian-carlos100.github.io/Inteligencia-Artificial/
+# robots.txt para https://carloscrisanto.vercel.app/
 User-agent: *
 Allow: /
 
 # Ubicación del Sitemap
-Sitemap: https://gian-carlos100.github.io/Inteligencia-Artificial/sitemap.xml
+Sitemap: https://carloscrisanto.vercel.app/sitemap.xml
