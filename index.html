@@ -4,19 +4,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gian Franco Carlos Crisanto</title>
-    <meta name="description" content="Sitio web personal de Gian Franco Carlos Crisanto.">
+    <title>Gian Franco Carlos Crisanto - Portafolio</title>
+    <meta name="description" content="Sitio web personal y portafolio de Gian Franco Carlos Crisanto, estudiante de Ciencia de la Computación en la UNMSM.">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Gian Franco Carlos Crisanto</h1>
-    <h3>Correo electrónico: gian.carlosc@unmsm.edu.pe</h3>
-    <h3>Linkedin: <a href="https://www.linkedin.com/in/gian-franco-carlos-crisanto-004124406/" target="_blank">Ver
-            perfil</a></h3>
-    <h3>Curso: Introducción a la Ciencia de la Computación</h3>
-    <h3>Carrera profesional: Ciencia de la Computación</h3>
-    <h3>Centro de estudios: Universidad Nacional Mayor de San Marcos</h3>
-    <img src="Linkedin.jpg" alt="Foto de Perfil">
+    <main class="content-wrapper">
+        <!-- Título Principal -->
+        <h1 class="main-title">Gian Franco Carlos Crisanto</h1>
+
+        <!-- Contenedor Principal (Perfil) -->
+        <section class="profile-card">
+            <!-- Columna Izquierda: Foto de Perfil -->
+            <div class="profile-pic-container">
+                <img src="Linkedin.jpg" alt="Foto de perfil de Gian Franco Carlos Crisanto" class="profile-pic">
+            </div>
+
+            <!-- Columna Derecha: Información Principal -->
+            <div class="profile-details">
+                <!-- Tabla de Valores -->
+                <div class="table-container">
+                    <table class="aptitudes-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">valores</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="check-col">
+                                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </td>
+                                <td>Resiliencia</td>
+                            </tr>
+                            <tr>
+                                <td class="check-col">
+                                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </td>
+                                <td>Empatía</td>
+                            </tr>
+                            <tr>
+                                <td class="check-col">
+                                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </td>
+                                <td>Respeto</td>
+                            </tr>
+                            <tr>
+                                <td class="check-col">
+                                    <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </td>
+                                <td>Tolerancia</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Cuadro de Biografía -->
+                <div class="bio-box">
+                    <p>Mucho gusto, esta es mi página web personal, en la cual muestro mis valores, datos academicos, redes sociales y contactos de interes. Tambiém quisiera agregar unos gustos míos como el ajedrez y los juegos online como el Clash Royale y el Left 4 Dead 2.</p>
+                </div>
+
+                <!-- Botones de Contacto Rápido -->
+                <div class="contact-actions">
+                    <a href="mailto:gian.carlosc@unmsm.edu.pe" class="btn-contact btn-email">
+                        <span>Correo electrónico:</span>
+                        <strong>gian.carlosc@unmsm.edu.pe</strong>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gian-franco-carlos-crisanto-004124406/" target="_blank" rel="noopener noreferrer" class="btn-contact btn-linkedin">
+                        <span>LinkedIn:</span>
+                        <strong>Ver perfil</strong>
+                    </a>
+                </div>
+
+                <!-- Tabla de Datos Académicos (Facultad, Universidad, Curso, Carrera) -->
+                <div class="table-container">
+                    <table class="academic-table">
+                        <thead>
+                            <tr>
+                                <th>Facultad</th>
+                                <th>Universidad</th>
+                                <th>Curso</th>
+                                <th>Carrera</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="check-inline">
+                                        <svg class="icon-check-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="20 6 9 17 4 12"></polyline>
+                                        </svg>
+                                        FISI
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="check-inline">
+                                        <svg class="icon-check-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="20 6 9 17 4 12"></polyline>
+                                        </svg>
+                                        SAN MARCOS
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="check-inline">
+                                        <svg class="icon-check-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="20 6 9 17 4 12"></polyline>
+                                        </svg>
+                                        ICC
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="check-inline">
+                                        <svg class="icon-check-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="20 6 9 17 4 12"></polyline>
+                                        </svg>
+                                        COMPUTER SCIENCE
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bloques Inferiores (Redes Sociales y Mis Contactos) -->
+        <div class="bottom-grid">
+            <!-- Tarjeta: Mis Redes Sociales -->
+            <section class="bottom-card card-socials">
+                <h2>MIS REDES SOCIALES</h2>
+                <div class="social-links">
+                    <a href="https://github.com/gIAn-carlos100" target="_blank" rel="noopener noreferrer" class="social-link-item link-github">
+                        <span class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </span>
+                        <span class="social-label">GITHUB</span>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link-item link-instagram">
+                        <span class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </span>
+                        <span class="social-label">INSTAGRAM</span>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link-item link-tiktok">
+                        <span class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path>
+                            </svg>
+                        </span>
+                        <span class="social-label">TIKTOK</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Tarjeta: Mis Contactos -->
+            <section class="bottom-card card-trust">
+                <h2>MIS CONTACTOS</h2>
+                <div class="trust-links">
+                    <a href="https://www.linkedin.com/in/ecuadrosv/" target="_blank" rel="noopener noreferrer" class="trust-link-item">
+                        <span class="trust-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </span>
+                        <span class="trust-label">LINKEDIN - Ernesto Cuadros-Vargas</span>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="trust-link-item">
+                        <span class="trust-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </span>
+                        <span class="trust-label">LINKEDIN - Zapata Montoya Jorge Fabian</span>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="trust-link-item">
+                        <span class="trust-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </span>
+                        <span class="trust-label">LINKEDIN - Dilan Inga</span>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="trust-link-item">
+                        <span class="trust-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </span>
+                        <span class="trust-label">LINKEDIN - Dylan Vera Sanchez</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 
 </html>
