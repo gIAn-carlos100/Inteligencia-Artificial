@@ -1,4 +1,4 @@
-/* Color de fondo oscuro y tipo de letra */
+/* Color de fondo y el tipo de letra */
 body {
     background-color: #1b2f24; /* Verde oscuro de fondo */
     font-family: Arial, Helvetica, sans-serif;
@@ -8,7 +8,7 @@ body {
     justify-content: center;
 }
 
-/* Tarjeta blanca en el centro */
+/* Mi tarjeta principal */
 .tarjeta-principal {
     background-color: #fcfdfc;
     max-width: 750px;
@@ -18,7 +18,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Titulo principal con tipografia clásica */
+/* Titulo principal */
 .titulo-nombre {
     color: #1b2f24;
     font-family: 'Georgia', serif;
@@ -29,7 +29,7 @@ body {
     padding-bottom: 12px;
 }
 
-/* Distribucion de foto y texto */
+/* Distribucion de  mi foto y el texto */
 .seccion-perfil {
     display: flex;
     align-items: center;
@@ -37,7 +37,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* Foto de perfil */
+/* Mi foto de perfil */
 .foto-perfil {
     width: 160px;
     height: 210px;
@@ -46,14 +46,14 @@ body {
     border: 2px solid #1b2f24;
 }
 
-/* Texto de la biografia */
+/* Texto de mi bio */
 .bio-texto {
     font-size: 1.05rem;
     line-height: 1.6;
     color: #333;
 }
 
-/* Titulos de cada seccion de informacion */
+/* Titulos de cada seccion de infos */
 .seccion-info h2 {
     color: #1b2f24;
     font-family: Arial, sans-serif;
@@ -74,7 +74,7 @@ body {
     vertical-align: middle;
 }
 
-/* Parrafos de informacion */
+/* Parrafos de mis infos */
 .seccion-info p {
     font-size: 1rem;
     line-height: 1.5;
@@ -82,7 +82,7 @@ body {
     margin: 0 0 10px 0;
 }
 
-/* Listas con viñetas */
+/* Mis viñetas */
 .seccion-info ul {
     list-style-type: none;
     padding-left: 5px;
@@ -124,7 +124,7 @@ body {
     margin-top: 25px;
 }
 
-/* Apartado separado para redes sociales */
+/* Para mis redes sociales */
 .seccion-redes {
     margin-top: 30px;
     padding-top: 25px;
@@ -173,7 +173,7 @@ body {
     background-color: #e2ede5;
 }
 
-/* Adaptabilidad para pantallas de celular */
+/* Adaptabilidad para el celular */
 @media (max-width: 650px) {
     body {
         padding: 15px;
