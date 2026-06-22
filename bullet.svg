@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <!-- Square border -->
+  <rect x="2" y="2" width="20" height="20" fill="none" stroke="#ccc" stroke-width="1.5" rx="1"/>
+  <!-- Left half of the arrowhead (white fill) -->
+  <polygon points="17,7 7,12 12,12" fill="#ffffff" stroke="#000000" stroke-width="1.5" stroke-linejoin="miter"/>
+  <!-- Right half of the arrowhead (black fill) -->
+  <polygon points="17,7 12,12 12,17" fill="#000000" stroke="#000000" stroke-width="1.5" stroke-linejoin="miter"/>
+</svg>
