@@ -1,298 +1,107 @@
-/* ==========================================================================
-   TEMA Y VARIABLES (Verde Musgo / Moss Green)
-   ========================================================================== */
-:root {
-    --bg-color: #2b3a2c;
-    --bg-gradient: linear-gradient(135deg, #2b3a2c 0%, #151e15 100%);
-    --card-bg: #1c271c;
-    --card-border: #425742;
-    --text-color: #f0f4f0;
-    --text-muted: #a0b2a0;
-    --accent-green: #a7c080;
-    --accent-green-bg: rgba(167, 192, 128, 0.1);
-    --accent-blue: #7daea3;
-    --bio-bg: #f5f8f5;
-    --bio-text: #1b251b;
-    --font-family: 'Plus Jakarta Sans', sans-serif;
-}
-
-/* ==========================================================================
-   ESTILOS GENERALES Y RESET
-   ========================================================================== */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+/* Color de fondo oscuro y tipo de letra */
 body {
-    font-family: var(--font-family);
-    background: var(--bg-gradient);
-    background-attachment: fixed;
-    color: var(--text-color);
+    background-color: #1b2f24; /* Verde oscuro de fondo */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
     padding: 40px 20px;
-    line-height: 1.6;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-/* ==========================================================================
-   ESTRUCTURA DE LA PÁGINA
-   ========================================================================== */
-.content-wrapper {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.main-title {
-    font-size: 2.2rem;
-    margin-bottom: 24px;
-    color: var(--text-color);
-    text-align: left;
-    border-bottom: 2px solid var(--accent-green);
-    padding-bottom: 8px;
-}
-
-/* ==========================================================================
-   TARJETA DE PERFIL (CONTENEDOR PRINCIPAL)
-   ========================================================================== */
-.profile-card {
-    background: var(--card-bg);
-    border: 2px solid var(--card-border);
-    border-radius: 12px;
-    padding: 30px;
     display: flex;
-    gap: 30px;
-    margin-bottom: 30px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Foto de Perfil */
-.profile-pic-container {
-    flex-shrink: 0;
-}
-
-.profile-pic {
-    width: 240px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 3px solid var(--card-border);
-}
-
-.profile-pic:hover {
-    border-color: var(--accent-green);
-}
-
-/* Detalles del Perfil */
-.profile-details {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* ==========================================================================
-   TABLAS Y BIOGRAFÍA
-   ========================================================================== */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 10px;
-}
-
-.aptitudes-table {
-    border: 1px solid var(--card-border);
-}
-
-.aptitudes-table th {
-    background: var(--card-border);
-    color: var(--text-color);
-    padding: 8px 12px;
-    text-transform: lowercase;
-    text-align: left;
-}
-
-.aptitudes-table td {
-    padding: 8px 12px;
-    border-bottom: 1px solid var(--card-border);
-}
-
-.check-col {
-    width: 35px;
-    text-align: center;
-}
-
-.icon-check {
-    width: 16px;
-    height: 16px;
-    color: var(--accent-green);
-}
-
-/* Cuadro de Biografía */
-.bio-box {
-    background: var(--bio-bg);
-    color: var(--bio-text);
-    padding: 15px 20px;
-    border-radius: 8px;
-    border-left: 5px solid var(--accent-green);
-    font-weight: 500;
-}
-
-/* ==========================================================================
-   BOTONES DE CONTACTO
-   ========================================================================== */
-.contact-actions {
-    display: flex;
-    gap: 15px;
-}
-
-.btn-contact {
-    flex: 1;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--card-border);
-    border-radius: 6px;
-    padding: 10px 15px;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.2s ease;
-}
-
-.btn-contact span {
-    font-size: 0.75rem;
-    color: var(--text-muted);
-}
-
-.btn-contact strong {
-    font-size: 0.9rem;
-}
-
-.btn-contact:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: var(--accent-green);
-    transform: translateY(-2px);
-}
-
-/* Tabla Académica */
-.academic-table {
-    border: 1px solid var(--card-border);
-}
-
-.academic-table th {
-    background: var(--card-border);
-    color: var(--text-muted);
-    padding: 6px 10px;
-    font-size: 0.8rem;
-    text-transform: lowercase;
-}
-
-.academic-table td {
-    padding: 10px;
-    font-size: 0.85rem;
-    font-weight: bold;
-    border: 1px solid var(--card-border);
-}
-
-.check-inline {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.icon-check-inline {
-    width: 14px;
-    height: 14px;
-    color: var(--accent-green);
-}
-
-/* ==========================================================================
-   BLOQUES DE REDES SOCIALES Y CONTACTOS
-   ========================================================================== */
-.bottom-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.bottom-card {
-    background: var(--card-bg);
-    border: 2px solid var(--card-border);
-    border-radius: 12px;
-    padding: 20px;
-}
-
-.bottom-card h2 {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-    border-bottom: 1px solid var(--card-border);
-    padding-bottom: 8px;
-    letter-spacing: 1px;
-}
-
-.social-links, .trust-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.social-link-item, .trust-link-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 15px;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid var(--card-border);
-    border-radius: 8px;
-    font-size: 0.85rem;
-    font-weight: bold;
-    transition: all 0.2s ease;
-}
-
-.social-icon, .trust-icon {
-    width: 28px;
-    height: 28px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 50%;
 }
 
-.social-icon svg, .trust-icon svg {
-    width: 16px;
-    height: 16px;
+/* Tarjeta blanca en el centro */
+.tarjeta-principal {
+    background-color: #fcfdfc;
+    max-width: 750px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Hover effects */
-.social-link-item:hover, .trust-link-item:hover {
-    background: rgba(255, 255, 255, 0.08);
-    transform: translateX(4px);
+/* Titulo principal con tipografia clásica */
+.titulo-nombre {
+    color: #1b2f24;
+    font-family: 'Georgia', serif;
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #1b2f24;
+    padding-bottom: 12px;
 }
 
-.link-github:hover { border-color: #fff; }
-.link-instagram:hover { border-color: #e1306c; }
-.link-tiktok:hover { border-color: #ff0050; }
-.trust-link-item:hover { border-color: var(--accent-blue); }
+/* Distribucion de foto y texto */
+.seccion-perfil {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
 
-/* ==========================================================================
-   RESPONSIVE DESIGN (MEDIA QUERIES)
-   ========================================================================= */
-@media (max-width: 768px) {
-    .profile-card {
+/* Foto de perfil */
+.foto-perfil {
+    width: 160px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid #1b2f24;
+}
+
+/* Texto de la biografia */
+.bio-texto {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Titulos de cada seccion de informacion */
+.seccion-info h2 {
+    color: #1b2f24;
+    font-family: Arial, sans-serif;
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    border-left: 5px solid #1b2f24;
+    padding-left: 10px;
+}
+
+/* Listas con viñetas */
+.seccion-info ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.seccion-info li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Enlaces */
+.seccion-info a {
+    color: #1f5737;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.seccion-info a:hover {
+    text-decoration: underline;
+}
+
+/* Adaptabilidad para pantallas de celular */
+@media (max-width: 650px) {
+    body {
+        padding: 15px;
+    }
+
+    .seccion-perfil {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
-    .profile-pic {
-        width: 200px;
-        height: 260px;
-    }
-    .bottom-grid {
-        grid-template-columns: 1fr;
-    }
-    .contact-actions {
-        flex-direction: column;
+
+    .foto-perfil {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%; /* Foto redonda para movil */
     }
 }
