@@ -64,6 +64,14 @@ body {
     padding-left: 10px;
 }
 
+/* Parrafos de informacion */
+.seccion-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+    margin: 0 0 10px 0;
+}
+
 /* Listas con viñetas */
 .seccion-info ul {
     list-style-type: square;
