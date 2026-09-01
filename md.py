@@ -181,7 +181,7 @@ tab_brawl, tab_mine, tab_lol = st.tabs([
     "⚔️ League of Legends"
 ])
 
-base_dir = os.path.dirname(_file_)
+base_dir = os.path.dirname(__file__)
 
 # ==========================================
 # 1. BRAWL STARS
@@ -201,7 +201,7 @@ with tab_brawl:
     col1, col2, col3 = st.columns(3)
     with col1:
         p_brawl = st.radio(
-            "🔹 *P:* ¿Súper cargada al 100%?",
+            "🔹 **P:** ¿Súper cargada al 100%?",
             options=["Sí", "No"],
             index=1,
             horizontal=True,
@@ -209,7 +209,7 @@ with tab_brawl:
         )
     with col2:
         q_brawl = st.radio(
-            "🔹 *Q:* ¿≥ 2 enemigos agrupados?",
+            "🔹 **Q:** ¿≥ 2 enemigos agrupados?",
             options=["Sí", "No"],
             index=1,
             horizontal=True,
@@ -217,7 +217,7 @@ with tab_brawl:
         )
     with col3:
         r_brawl = st.radio(
-            "🔹 *R:* ¿Salud crítica (< 20%)?",
+            "🔹 **R:** ¿Salud crítica (< 20%)?",
             options=["Sí", "No"],
             index=1,
             horizontal=True,
@@ -293,7 +293,7 @@ with tab_mine:
     c1, c2, c3 = st.columns(3)
     with c1:
         p_mine = st.radio(
-            "🪵 *P:* ¿Madera suficiente? (≥3 troncos)",
+            "🪵 **P:** ¿Madera suficiente? (≥3 troncos)",
             options=["Sí", "No"],
             index=1,
             horizontal=True,
@@ -301,7 +301,7 @@ with tab_mine:
         )
     with c2:
         q_mine = st.radio(
-            "📦 *Q:* ¿Mesa de crafteo colocada?",
+            "📦 **Q:** ¿Mesa de crafteo colocada?",
             options=["Sí", "No"],
             index=1,
             horizontal=True,
@@ -309,7 +309,7 @@ with tab_mine:
         )
     with c3:
         r_mine = st.radio(
-            "🪨 *R:* ¿Piedra suficiente? (≥3 cobblestone)",
+            "🪨 **R:** ¿Piedra suficiente? (≥3 cobblestone)",
             options=["Sí", "No"],
             index=1,
             horizontal=True,
@@ -385,7 +385,7 @@ with tab_lol:
     l1, l2, l3 = st.columns(3)
     with l1:
         p_lol = st.radio(
-            "💰 *P:* ¿Ventaja de oro?",
+            "💰 **P:** ¿Ventaja de oro?",
             options=["Sí", "No"],
             index=1,
             horizontal=True,
@@ -393,7 +393,7 @@ with tab_lol:
         )
     with l2:
         q_lol = st.radio(
-            "👥 *Q:* ¿Equipo agrupado?",
+            "👥 **Q:** ¿Equipo agrupado?",
             options=["Sí", "No"],
             index=1,
             horizontal=True,
@@ -401,7 +401,7 @@ with tab_lol:
         )
     with l3:
         r_lol = st.radio(
-            "🐉 *R:* ¿Objetivo disponible (Dragón/Barón)?",
+            "🐉 **R:** ¿Objetivo disponible (Dragón/Barón)?",
             options=["Sí", "No"],
             index=1,
             horizontal=True,
