@@ -238,8 +238,10 @@ with tab_brawl:
     p_b_tag = '<span class="val-true">✅ Verdadero (V)</span>' if P_bs else '<span class="val-false">❌ Falso (F)</span>'
     q_b_tag = '<span class="val-true">✅ Verdadero (V)</span>' if Q_bs else '<span class="val-false">❌ Falso (F)</span>'
     r_b_tag = '<span class="val-true">✅ Verdadero (V)</span>' if R_bs else '<span class="val-false">❌ Falso (F)</span>'
+    d_b_color = '#00E676' if D_bs else '#FF5252'
+    d_b_text = 'D = V (Verdadero)' if D_bs else 'D = F (Falso)'
 
-    st.markdown(f'''
+    st.markdown(f"""
     <div class="logic-card">
         <span><b>P</b> - Súper cargada al 100%</span>
         {p_b_tag}
@@ -254,25 +256,25 @@ with tab_brawl:
     </div>
     <div class="logic-card" style="border-left-color: #f59e0b; background: rgba(245, 158, 11, 0.1);">
         <span><b>Fórmula Lógica:</b> <code>D = (P ∧ Q) ∨ (P ∧ R)</code></span>
-        <span style="font-weight: 800; color: {'#00E676' if D_bs else '#FF5252'};">{'D = V (Verdadero)' if D_bs else 'D = F (Falso)'}</span>
+        <span style="font-weight: 800; color: {d_b_color};">{d_b_text}</span>
     </div>
-    ''', unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
     # Decisión Final Brawl Stars
     if D_bs:
-        st.markdown('''
+        st.markdown("""
         <div class="result-box-green">
             <div class="result-title" style="color: #00E676;">🔥 DECISIÓN: ¡ACTIVAR SÚPER!</div>
             <div class="result-desc" style="color: #e8f5e9;">(Impacto alto o salvación / Supervivencia)</div>
         </div>
-        ''', unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
     else:
-        st.markdown('''
+        st.markdown("""
         <div class="result-box-red">
             <div class="result-title" style="color: #FF5252;">🛡️ DECISIÓN: ¡GUARDAR SÚPER!</div>
             <div class="result-desc" style="color: #ffebee;">(Ahorrar o recargar / No desperdiciar)</div>
         </div>
-        ''', unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
 
 
 # ==========================================
@@ -330,8 +332,10 @@ with tab_mine:
     p_m_tag = '<span class="val-true">✅ Verdadero (V)</span>' if P_mc else '<span class="val-false">❌ Falso (F)</span>'
     q_m_tag = '<span class="val-true">✅ Verdadero (V)</span>' if Q_mc else '<span class="val-false">❌ Falso (F)</span>'
     r_m_tag = '<span class="val-true">✅ Verdadero (V)</span>' if R_mc else '<span class="val-false">❌ Falso (F)</span>'
+    d_m_color = '#00E676' if D_mc else '#FF5252'
+    d_m_text = 'D = V (Verdadero)' if D_mc else 'D = F (Falso)'
 
-    st.markdown(f'''
+    st.markdown(f"""
     <div class="logic-card">
         <span><b>P</b> - Madera suficiente (≥ 3 troncos)</span>
         {p_m_tag}
@@ -346,25 +350,25 @@ with tab_mine:
     </div>
     <div class="logic-card" style="border-left-color: #f59e0b; background: rgba(245, 158, 11, 0.1);">
         <span><b>Fórmula Lógica:</b> <code>D = (P ∧ Q) ∧ R</code></span>
-        <span style="font-weight: 800; color: {'#00E676' if D_mc else '#FF5252'};">{'D = V (Verdadero)' if D_mc else 'D = F (Falso)'}</span>
+        <span style="font-weight: 800; color: {d_m_color};">{d_m_text}</span>
     </div>
-    ''', unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
     # Decisión Final Minecraft
     if D_mc:
-        st.markdown('''
+        st.markdown("""
         <div class="result-box-green">
             <div class="result-title" style="color: #00E676;">⛏️ DECISIÓN: ¡CREAR PICO DE PIEDRA!</div>
             <div class="result-desc" style="color: #e8f5e9;">(¡Crafteo exitoso! Se cumplen todas las condiciones necesarias)</div>
         </div>
-        ''', unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
     else:
-        st.markdown('''
+        st.markdown("""
         <div class="result-box-red">
             <div class="result-title" style="color: #FF5252;">❌ DECISIÓN: ¡NO PODEMOS CREAR EL PICO!</div>
             <div class="result-desc" style="color: #ffebee;">(Faltan materiales o la mesa de crafteo no está colocada)</div>
         </div>
-        ''', unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
 
 
 # ==========================================
@@ -422,8 +426,10 @@ with tab_lol:
     p_l_tag = '<span class="val-true">✅ Verdadero (V)</span>' if P_lol else '<span class="val-false">❌ Falso (F)</span>'
     q_l_tag = '<span class="val-true">✅ Verdadero (V)</span>' if Q_lol else '<span class="val-false">❌ Falso (F)</span>'
     r_l_tag = '<span class="val-true">✅ Verdadero (V)</span>' if R_lol else '<span class="val-false">❌ Falso (F)</span>'
+    d_l_color = '#00E676' if D_lol else '#FF5252'
+    d_l_text = 'D = V (Verdadero)' if D_lol else 'D = F (Falso)'
 
-    st.markdown(f'''
+    st.markdown(f"""
     <div class="logic-card">
         <span><b>P</b> - Ventaja de oro</span>
         {p_l_tag}
@@ -438,22 +444,22 @@ with tab_lol:
     </div>
     <div class="logic-card" style="border-left-color: #f59e0b; background: rgba(245, 158, 11, 0.1);">
         <span><b>Fórmula Lógica:</b> <code>D = (P ∧ Q) ∨ (Q ∧ R)</code></span>
-        <span style="font-weight: 800; color: {'#00E676' if D_lol else '#FF5252'};">{'D = V (Verdadero)' if D_lol else 'D = F (Falso)'}</span>
+        <span style="font-weight: 800; color: {d_l_color};">{d_l_text}</span>
     </div>
-    ''', unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
 
     # Decisión Final LoL
     if D_lol:
-        st.markdown('''
+        st.markdown("""
         <div class="result-box-green">
             <div class="result-title" style="color: #00E676;">⚔️ DECISIÓN: ¡PELEAR (INICIAR PELEA)!</div>
             <div class="result-desc" style="color: #e8f5e9;">(Equipo agrupado con ventaja de oro u objetivo disponible)</div>
         </div>
-        ''', unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
     else:
-        st.markdown('''
+        st.markdown("""
         <div class="result-box-red">
             <div class="result-title" style="color: #FF5252;">🚫 DECISIÓN: ¡NO PELEAR (RETIRADA)!</div>
             <div class="result-desc" style="color: #ffebee;">(Riesgo alto: el equipo no está agrupado o no hay condiciones favorables)</div>
         </div>
-        ''', unsafe_allow_html=True)
+        """, unsafe_allow_html=True)
